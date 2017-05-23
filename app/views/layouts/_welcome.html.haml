@@ -1,0 +1,37 @@
+%header#master-header.full-screen.overlayed
+		.bg-overlay
+		#media-container
+				.youtube-player{"data-property" => "{videoURL:'kxLoycj4pJY', realfullscreen:true, quality:'hd720', 'startAt':'175', stopAt:'250', containment:'#media-container', showControls:false, mute:true}"}
+		.top-header
+				.container
+						/ ============ Main Navigation - START ============
+						%a#nav-toggle{:href => "#"}
+								%span
+						%nav#nav-menu
+								%ul
+										%li
+												%a{:href => "about-us-1.html", :title => "Quienes somos"} Nosotros
+										%li
+												%a{:href => "#", :title => "Portafolio"} Portafolio
+										%li
+												%a{:href => "journal.html", :title => "Blog"} Blog
+										%li
+												%a{:href => "faq.html", :title => "Preguntas Frecuentes"} Preguntas Frecuentes
+										%li
+												%a{:href => "contacts.html", :title => "Contacto"} Contáctanos
+										%li
+												%a{:href => "appointment.html", :title => "Citas"}
+														%i.fa.fa-thumb-tack>
+														Pide una cita
+										//%li
+										//  %a#toggle-volume{:href => "#"}
+										//    %i.fa.fa-volume-off
+						/ ============ Main Navigation - END ============
+		#brand
+				%h1#logo
+						%img{:alt => "The Tattooist - Tattoo Studio", :src => "assets/logo.png"}/
+				.info
+						%span Tattoos
+						%img{:alt => "", :src => "assets/divider.png"}/
+						%span Piercings
+/ ============ Main Header - END ============

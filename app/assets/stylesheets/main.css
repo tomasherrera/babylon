@@ -3345,6 +3345,10 @@ button::-moz-focus-inner {
     content: '';
 }
 
+.green{
+    color:green;
+}
+
 .mfp-arrow:after,
 .mfp-arrow .mfp-a {
     top: 8px;

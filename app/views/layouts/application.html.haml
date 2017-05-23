@@ -1,173 +1,100 @@
 !!!
 %html{:lang => "en-US"}
-  %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %meta{:charset => "utf-8"}/
-    %title The Tattooist - Tattoo Studio Template
-    %meta{:content => "", :name => "description"}/
-    %meta{:content => "width=device-width, initial-scale=1.0, maximum-scale=1.0", :name => "viewport"}/
-    %link{:href => "favicon.ico", :rel => "shortcut icon"}/
-    %link{:href => "assets/main.css", :rel => "stylesheet"}/
-  %body
-    .wrapper
-      %header#master-header.full-screen.overlayed
-        .bg-overlay
-        #media-container
-          .youtube-player{"data-property" => "{videoURL:'0FA6RiGyT1Y',containment:'#media-container',showControls:false,mute:true}"}
-        .top-header
-          .container
-            / ============ Main Navigation - START ============
-            %a#nav-toggle{:href => "#"}
-              %span
-            %nav#nav-menu
-              %ul
-                %li
-                  %a{:href => "about-us-1.html", :title => "About Us 1 Page"} Nosotros
-                %li
-                  %a{:href => "#", :title => "Portfolio"} Portafolio
-                %li
-                  %a{:href => "journal.html", :title => "Journal"} Blog
-                %li
-                  %a{:href => "faq.html", :title => "Faqs & Disclaimers Page"} Preguntas Frecuentes
-                %li
-                  %a{:href => "contacts.html", :title => "Contacts Page"} Contáctanos
-                %li
-                  %a{:href => "appointment.html", :title => "Appointment Page"}
-                    %i.fa.fa-thumb-tack>
-                    Pide una cita
-                //%li
-                //  %a#toggle-volume{:href => "#"}
-                //    %i.fa.fa-volume-off
-            / ============ Main Navigation - END ============
-        #brand
-          %h1#logo
-            %img{:alt => "The Tattooist - Tattoo Studio", :src => "assets/logo.png"}/
-          .info
-            %span Tattoos
-            %img{:alt => "", :src => "assets/divider.png"}/
-            %span Piercings
-      / ============ Main Header - END ============
-      #main
-        / ============ Contacts Bar - START ============
-        #contacts-bar.row
-          .address.col-md-6
-            %strong> BABYLON INK TATTOO - Tattoo Studio
-            ,  Carrera 45b # 90-210 Local 2 Callejón SAO 93 CC Alkarawi
-          .other.col-md-6
-            %span.contact
-              %i.fa.fa-phone>
-              Teléfono:
-              %strong (035) 373 9371
-            %span.contact
-              %i.fa.fa-mobile>
-              Celular:
-              %strong 301 391 5261
-            %span.contact
-              %i.fa.fa-envelope>
-              Email:
-              %a{:href => "mailto:info@babyloninktattoo.com"}
-                %strong info@babyloninktattoo.com
-        / ============ Contacts Bar - END ============
-        / ============ Services - START ============
-        #service.section
-          .content.container
-            .row
-              .col-md-4
-                %h3 Servicio A
-                %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, eum ullam accusantium eius repudiandae optio consequuntur debitis placeat itaque expedita nihil.
-              .col-md-4
-                %h3 Servicio B
-                %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, eum ullam accusantium eius repudiandae optio consequuntur debitis placeat itaque expedita nihil.
-              .col-md-4
-                %h3 Servicio C
-                %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, eum ullam accusantium eius repudiandae optio consequuntur debitis placeat itaque expedita nihil.
-              .col-md-4
-                %h3 Servicio D
-                %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, eum ullam accusantium eius repudiandae optio consequuntur debitis placeat itaque expedita nihil.
-              .col-md-4
-                %h3 Servicio E
-                %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, eum ullam accusantium eius repudiandae optio consequuntur debitis placeat itaque expedita nihil.
-              .col-md-4
-                %h3 Servicio F
-                %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, eum ullam accusantium eius repudiandae optio consequuntur debitis placeat itaque expedita nihil.
-        / ============ Services - END ============
-        / ============ Call to Action - START ============
-        #appointment.section.cta.dark
-          %h2 Listo para tatuarte?
-          .cta-info
-            Pide una cita
-            = succeed "!" do
-              %strong AHORA
-          %a.btn.md.light{:href => "appointment.html"}
-            %i.fa.fa-thumb-tack>
-            Cita
-        / ============ Call to Action - END ============
-        / ============ Instagram Banner - START ============
-        %a.instagram-bar{:href => "#"}
-          Mira nuestro trabajo en
-          = succeed "!" do
-            %strong Instagram
-        / ============ Instagram Banner - END ============
-      / ============ Footer - START ============
-      %footer.dark
-        .container
-          .row
-            .footer-col.col-md-4.col-sm-6
-              %h3.focus-title Quienes somos
-              %p
-                %img.align-center{:alt => "THE TATTOOIST - Tattoo Studio", :src => "assets/logo.png", :width => "200"}/
-              %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet facilis iusto quam, nisi voluptates minima. Nihil quasi dolore odio nulla sequi, ipsum placeat distinctio vero neque maxime, et reprehenderit asperiores.
-            .footer-col.col-md-4.col-sm-6
-              %h3.focus-title
-                %i.fa.fa-clock-o>
-                Horarios
-              %dl.working-days
-                %dt Lunes
-                %dd 10:00 am - 8:00 pm
-                %dt Martes
-                %dd 10:00 am - 8:00 pm
-                %dt Miercoles
-                %dd 10:00 am - 8:00 pm
-                %dt Jueves
-                %dd 10:00 am - 8:00 pm
-                %dt Viernes
-                %dd 10:00 am - 8:00 pm
-                %dt Sabado
-                %dd 10:00 am - 6:00 pm
-                %dt Domingo
-                %dd Cerrado
-            .footer-col.footer-contacts.col-md-4.col-sm-12
-              .contact-item
-                %span BABYLON INK TATTOO - Tattoo Studio
-                %strong Carrera 45b # 90-210 Local 2 Callejón SAO 93 CC Alkarawi
-              .contact-item
-                %span Teléfonos:
-                %strong (035) 373 9371 - 301 391 5261
-              .contact-item
-                %span Email:
-                %strong
-                  %a{:href => "#"} info@babyloninktattoo.com
-              .contact-item
-                %span Siguenos en:
-                %ul.social-links
-                  %li
-                    %a{:href => "#", :title => "Facebook"}
-                      %i.fa.fa-facebook
-                  %li
-                    %a{:href => "#", :title => "Twitter"}
-                      %i.fa.fa-twitter
-                  %li
-                    %a{:href => "#", :title => "Google+"}
-                      %i.fa.fa-google-plus
-                  %li
-                    %a{:href => "#", :title => "Instagram"}
-                      %i.fa.fa-instagram
-        .copyright
-          © 2016 -
-          %strong Babylon Ink Tattoo - by Tomás Herrera
-      / ============ Footer - END ============
-    %script{:src => "assets/jquery.min.js"}
-    %script{:src => "assets/common.js"}
-    %script{:src => "assets/config.js"}
-    %script{:src => "assets/main.js"}
+		%head
+				%meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+				%meta{:charset => "utf-8"}/
+				%title Babylon Ink
+				%meta{:content => "", :name => "description"}/
+				%meta{:content => "width=device-width, initial-scale=1.0, maximum-scale=1.0", :name => "viewport"}/
+				%link{:href => "favicon.ico", :rel => "shortcut icon"}/
+				%link{:href => "assets/main.css", :rel => "stylesheet"}/
+		%body
+				.wrapper
+						= render 'layouts/welcome'
+						#main
+								= render 'partials/contacts_bar'
+								= render 'partials/services_section'
+								/ ============ Call to Action - START ============
+								%section#appointment.section.cta.dark.bg{style: "background-image: url(assets/pibe.jpg);"}
+										.bg-overlay
+										%h1 Listo para tatuarte?
+										.cta-info
+												Pide una cita
+												= succeed "!" do
+														%strong AHORA
+										%a.btn.md.light{:href => "appointment.html"}
+												%i.fa.fa-thumb-tack>
+												Cita
+								/ ============ Call to Action - END ============
+								/ ============ Instagram Banner - START ============
+								%a.instagram-bar{:href => "https://www.instagram.com/babylontattoo90210_/", target: "_blank"}
+										Mira nuestro trabajo en
+										= succeed "!" do
+												%strong Instagram
+								/ ============ Instagram Banner - END ============
+						/ ============ Footer - START ============
+						%footer.dark
+								.container
+										.row
+												.footer-col.col-md-4.col-sm-6
+														%h3.focus-title Quienes somos
+														%p
+																%img.align-center{:alt => "THE TATTOOIST - Tattoo Studio", :src => "assets/logo.png", :width => "300"}/
+														%p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet facilis iusto quam, nisi voluptates minima. Nihil quasi dolore odio nulla sequi, ipsum placeat distinctio vero neque maxime, et reprehenderit asperiores.
+												.footer-col.col-md-4.col-sm-6
+														%h3.focus-title
+																%i.fa.fa-clock-o>
+																Horarios
+														%dl.working-days
+																%dt Lunes
+																%dd 10:00 am - 8:00 pm
+																%dt Martes
+																%dd 10:00 am - 8:00 pm
+																%dt Miercoles
+																%dd 10:00 am - 8:00 pm
+																%dt Jueves
+																%dd 10:00 am - 8:00 pm
+																%dt Viernes
+																%dd 10:00 am - 8:00 pm
+																%dt Sabado
+																%dd 10:00 am - 6:00 pm
+																%dt Domingo
+																%dd Cerrado
+												.footer-col.footer-contacts.col-md-4.col-sm-12
+														.contact-item
+																%span BABYLON INK TATTOO - Tattoo Studio
+																%strong Carrera 45b # 90-210 Local 2 Callejón SAO 93 CC Alkarawi
+														.contact-item
+																%span Teléfonos:
+																%strong
+																		(035) 373 9371
+																		\-
+																		301 391 5261
+														.contact-item
+																%span Email:
+																%strong
+																		%a{:href => "#"} info@babyloninktattoo.com
+														.contact-item
+																%span Siguenos en:
+																%ul.social-links
+																		%li
+																				%a{:href => "#", :title => "Facebook"}
+																						%i.fa.fa-facebook
+																		%li
+																				%a{:href => "#", :title => "Twitter"}
+																						%i.fa.fa-twitter
+																		%li
+																				%a{:href => "#", :title => "Google+"}
+																						%i.fa.fa-google-plus
+																		%li
+																				%a{:href => "#", :title => "Instagram"}
+																						%i.fa.fa-instagram
+								.copyright
+										© 2016 -
+										%strong Babylon Ink Tattoo - by Tomás Herrera
+						/ ============ Footer - END ============
+				%script{:src => "assets/jquery.min.js"}
+				%script{:src => "assets/common.js"}
+				%script{:src => "assets/config.js"}
+				%script{:src => "assets/main.js"}
 
